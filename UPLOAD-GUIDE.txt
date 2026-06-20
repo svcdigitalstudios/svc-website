@@ -1,26 +1,21 @@
-SVC WEBSITE — HERITAGE & AUTOMATIC GALLERY UPDATE
+SVC WEBSITE — FINAL GALLERY HEADING UPDATE
 
-COMPLETED:
-- Centred “Rooted near the heritage of Gangaikonda Cholapuram”
-- Added a clearer, locally optimized temple photograph
-- Replaced the old gallery heading and paragraph
-- Added the requested line:
-  Capturing the quiet magic between the heartbeats—weddings, celebrations, and love told in frames.
-- Selected seven uploaded wedding photographs
-- Gallery now changes automatically one image at a time
-- Added previous/next arrows, navigation dots, captions and lightbox preview
-- Gallery pauses while the mouse is over it
-- Images are optimized as WebP for faster loading
-- Existing round page-end slideshow is retained
+CHANGED:
+- Removed:
+  Capturing the quiet magic between the heartbeats—
+  weddings, celebrations, and love told in frames.
 
-UPLOAD TO GITHUB:
+- Added:
+  The quiet magic between heartbeats, beautifully framed.
+
+- Centred and balanced the heading for desktop, tablet and mobile.
+- All heart-shaped gallery images and automatic animation remain unchanged.
+
+UPLOAD:
 1. Extract this ZIP.
 2. Open the GitHub repository: svc-website
 3. Click Add file > Upload files.
-4. Upload ALL files from the extracted folder.
+4. Upload all files from the extracted folder.
 5. Keep every file in the repository root.
-6. Select “Commit directly to the main branch”.
-7. Click Commit changes.
-8. Wait 2–3 minutes and refresh the website.
-
-Do not upload only index.html. The gallery, temple and moment WebP files are also required.
+6. Commit directly to the main branch.
+7. Wait 2–3 minutes and press Ctrl + F5 on the website.
