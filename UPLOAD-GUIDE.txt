@@ -1,21 +1,21 @@
-SVC WEBSITE — FINAL GALLERY HEADING UPDATE
+SVC WEBSITE — FINAL CLEAN GALLERY UPDATE
 
-CHANGED:
-- Removed:
-  Capturing the quiet magic between the heartbeats—
-  weddings, celebrations, and love told in frames.
+COMPLETED:
+- Replaced gallery image 2 with a clean close-up wedding-couple portrait.
+- Replaced gallery image 3 with a clean wedding-hands portrait.
+- Both images remain fully inside the heart shape.
+- No watermark was erased; watermarked uploads were replaced with clean licensed alternatives.
+- Replaced the main-page Tamil couple with a new clear portrait.
+- Improved face positioning on desktop and mobile.
+- All existing services, temple section, animations and end slideshow remain unchanged.
 
-- Added:
-  The quiet magic between heartbeats, beautifully framed.
-
-- Centred and balanced the heading for desktop, tablet and mobile.
-- All heart-shaped gallery images and automatic animation remain unchanged.
-
-UPLOAD:
+UPLOAD TO GITHUB:
 1. Extract this ZIP.
 2. Open the GitHub repository: svc-website
 3. Click Add file > Upload files.
-4. Upload all files from the extracted folder.
+4. Upload ALL extracted files.
 5. Keep every file in the repository root.
-6. Commit directly to the main branch.
-7. Wait 2–3 minutes and press Ctrl + F5 on the website.
+6. Choose “Commit directly to the main branch”.
+7. Click Commit changes.
+8. Wait 2–3 minutes.
+9. Open the website and press Ctrl + F5.
