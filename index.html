@@ -1613,6 +1613,78 @@
       nav{height:78px !important;}
     }
 
+
+    /* FINAL HEADER LOGO + HERO TEXT FIX */
+    .nav-wrap{
+      background:rgba(7,9,20,.72);
+      backdrop-filter:blur(16px);
+    }
+    nav{
+      height:96px;
+    }
+    .brand{
+      max-width:min(42vw,390px) !important;
+      flex:0 0 auto !important;
+    }
+    .brand-mark.wide-logo{
+      width:clamp(250px,32vw,390px) !important;
+      height:76px !important;
+      padding:6px 8px !important;
+      border-radius:16px !important;
+      background:rgba(255,255,255,.08) !important;
+      border:1px solid rgba(255,255,255,.12) !important;
+      overflow:visible !important;
+    }
+    .brand-mark.wide-logo .brand-logo{
+      width:100% !important;
+      height:100% !important;
+      object-fit:contain !important;
+      object-position:left center !important;
+      filter:drop-shadow(0 8px 18px rgba(0,0,0,.45));
+    }
+    .nav-links{
+      gap:18px;
+    }
+    .nav-links a{
+      font-size:.88rem;
+    }
+    .hero h1{
+      font-size:clamp(2.65rem,5.15vw,5.2rem) !important;
+      max-width:780px;
+    }
+    .hero-business-name{
+      margin:0 0 18px !important;
+      max-width:760px !important;
+      font-size:clamp(1.12rem,2.35vw,1.75rem) !important;
+      font-weight:900 !important;
+      line-height:1.25 !important;
+      background:linear-gradient(90deg,#ffffff,#c4b5fd 48%,#67e8f9);
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent !important;
+      letter-spacing:.01em;
+    }
+    #closingMoments .closing-kicker{
+      text-align:center !important;
+      justify-content:center !important;
+    }
+    @media (max-width:1050px){
+      .brand{max-width:min(54vw,360px) !important;}
+      .brand-mark.wide-logo{width:clamp(230px,46vw,360px) !important;height:68px !important;}
+      .nav-links{gap:12px;}
+    }
+    @media (max-width:820px){
+      nav{height:86px !important;}
+      .brand{max-width:calc(100vw - 92px) !important;}
+      .brand-mark.wide-logo{width:min(320px,70vw) !important;height:64px !important;}
+    }
+    @media (max-width:580px){
+      nav{height:78px !important;}
+      .brand-mark.wide-logo{width:min(260px,68vw) !important;height:54px !important;padding:4px 6px !important;}
+      .hero h1{font-size:clamp(2.2rem,10.6vw,3.45rem) !important;}
+      .hero-business-name{font-size:clamp(1rem,4.6vw,1.35rem) !important;}
+    }
+
   </style>
 </head>
 
@@ -1624,7 +1696,7 @@
       <nav>
         <a class="brand" href="#home" aria-label="Sri Venkateshwara Computers & Digital Studio Videos Home">
           <div class="brand-mark wide-logo" aria-hidden="true">
-            <img class="brand-logo" src="svc-website-logo.png" alt="Sri Venkateshwara Computers & Digital Studio Videos logo">
+            <img class="brand-logo" src="svc-website-logo-visible.png" alt="Sri Venkateshwara Computers & Digital Studio Videos logo">
           </div>
           <div class="brand-copy brand-fallback">
             <strong>Sri Venkateshwara Computers</strong>
@@ -1657,12 +1729,9 @@
     <section class="hero" id="home">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <div class="live-pill"><span class="dot"></span> Serving Keezhapalur (Keelapalur) & Ariyalur </div>
-         <h1>
-Your Trusted Digital Service & Wedding Photography Center in Keezhapalur
-<br>
-<span class="gradient-text">Sri Venkateshwara Computers & Digital Studio Videos</span>
-</h1>
+          <div class="live-pill"><span class="dot"></span> Serving Keezhapalur, Ariyalur District </div>
+         <h1>Your Trusted Digital Service & Wedding Photography Center in Keezhapalur</h1>
+          <p class="hero-business-name">Sri Venkateshwara Computers & Digital Studio Videos</p>
           <p>
            Wedding Photography, Passport Photos, Xerox, Color Printing, PAN Card Services, AEPS Banking, Money Transfer, Airtel Payments Bank BC, Spice Money BC, Biznext, Insurance and Digital Services in Keezhapalur, Ariyalur District, Tamil Nadu.
           </p>
