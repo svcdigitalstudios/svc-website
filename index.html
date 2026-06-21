@@ -1422,6 +1422,97 @@
       }
     }
 
+
+
+    /* SVC final responsive fix: contact + Wedding Memories centre */
+    #contact .contact-card{
+      align-items:stretch;
+    }
+    #contact .contact-copy{
+      min-width:0;
+    }
+    #closingMoments.contact-art{
+      width:100%;
+      min-height:620px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:clamp(34px,4vw,56px) 22px 118px;
+      background:
+        radial-gradient(circle at 50% 32%,rgba(251,207,232,.24),transparent 32%),
+        radial-gradient(circle at 18% 82%,rgba(139,92,246,.22),transparent 34%),
+        linear-gradient(145deg,#170d24 0%,#32102d 48%,#100c24 100%);
+    }
+    #closingMoments .closing-showcase{
+      width:100%;
+      max-width:520px;
+      margin:0 auto;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+    }
+    #closingMoments .closing-kicker{
+      margin:0 auto 20px;
+      align-self:center;
+      text-align:center;
+      min-width:min(100%,260px);
+      justify-content:center;
+      font-size:clamp(.74rem,1.2vw,.86rem);
+      letter-spacing:.12em;
+    }
+    #closingMoments .closing-frame{
+      width:clamp(300px,78%,430px);
+      max-width:430px;
+      margin:0 auto;
+    }
+    #closingMoments .closing-caption{
+      width:100%;
+      max-width:440px;
+      margin:20px auto 0;
+      text-align:center;
+    }
+    #closingMoments .closing-dots{
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    @media (max-width:820px){
+      #contact .contact-card{
+        grid-template-columns:1fr;
+      }
+      #closingMoments.contact-art{
+        min-height:560px;
+        padding:34px 18px 108px;
+      }
+      #closingMoments .closing-frame{
+        width:min(76vw,360px);
+      }
+    }
+
+    @media (max-width:580px){
+      #closingMoments.contact-art{
+        min-height:520px;
+        padding:28px 14px 104px;
+      }
+      #closingMoments .closing-frame{
+        width:min(78vw,315px);
+        padding:7px;
+      }
+      #closingMoments .closing-kicker{
+        min-width:min(100%,230px);
+        padding:8px 12px;
+      }
+      #closingMoments .closing-caption strong{
+        font-size:1.35rem;
+      }
+      #closingMoments .closing-caption span{
+        font-size:.78rem;
+      }
+    }
+
   </style>
 </head>
 
@@ -1463,17 +1554,17 @@
     <section class="hero" id="home">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <div class="live-pill"><span class="dot"></span> Serving Keezhapalur, Ariyalur District </div>
+          <div class="live-pill"><span class="dot"></span> Serving Keezhapalur (Keelapalur) & Ariyalur </div>
          <h1>
 Sri Venkateshwara Computers & Digital Studio Videos
 <br>
-<span class="gradient-text">Keezhapalur, Ariyalur District, Tamil Nadu 621707</span>
+<span class="gradient-text">Keezhapalur (Keelapalur), Ariyalur, Tamil Nadu</span>
 </h1>
-         <p>
-Wedding Photography, Passport Photos, Xerox, Color Printing, PAN Card Services, AEPS Banking, Money Transfer, Airtel Payments Bank BC, Spice Money BC, Insurance and Digital Services in Keezhapalur, Ariyalur District, Tamil Nadu.
-</p>
+          <p>
+           Wedding Photography, Passport Photos, Xerox, Color Printing, PAN Card Services, AEPS Banking, Money Transfer, Airtel Payments Bank BC, Spice Money BC and Digital Services in Keezhapalur (Keelapalur), Ariyalur.
+          </p>
 
-<div class="hero-actions">
+          <div class="hero-actions">
             <a class="btn btn-primary" target="_blank" rel="noopener"
                href="https://wa.me/919361359884?text=Hello%20SVC%20Digital%20Studios,%20I%20want%20to%20book%20a%20service.">
               <i class="fa-brands fa-whatsapp"></i> Book on WhatsApp
@@ -1585,7 +1676,7 @@ Wedding Photography, Passport Photos, Xerox, Color Printing, PAN Card Services, 
         <div class="platforms reveal" id="platforms">
           <div class="platforms-head">
             <div><span class="eyebrow">Service platforms</span><h3>Assisted banking service network</h3></div>
-            <p>Authorised BC Partner for Airtel Payments Bank, Spice Money and Biznext. AEPS, Money Transfer, PAN Card, Insurance, Printing, Xerox and Digital Services available at our Keezhapalur outlet.</p>
+            <p>Authorised BC Partner for Airtel Payments Bank, Spice Money and Biznext. Services include AEPS, Money Transfer, PAN Card Assistance, Insurance Services, Online Services, Printing, Xerox and Digital Solutions.</p>
           </div>
           <div class="logo-grid">
             <a class="logo-card" href="https://www.airtelpayments.bank.in/" target="_blank" rel="noopener">
@@ -1601,7 +1692,7 @@ Wedding Photography, Passport Photos, Xerox, Color Printing, PAN Card Services, 
               <small>Biznext Digital Banking</small>
             </a>
           </div>
-          <p style="margin-top:16px;color:var(--muted);font-size:.78rem;text-align:center;">We are authorised BC partners for Airtel Payments Bank, Spice Money and Biznext.</p>
+          <p style="margin-top:16px;color:var(--muted);font-size:.78rem;text-align:center;">Sri Venkateshwara Computers & Digital Studio Videos is an authorised service outlet for the listed banking and digital services available at our Keezhapalur branch.</p>
         </div>
       </div>
     </section>
@@ -1813,12 +1904,7 @@ Wedding Photography, Passport Photos, Xerox, Color Printing, PAN Card Services, 
               </div>
               <div class="contact-row">
                 <i class="fa-solid fa-globe"></i>
-                <div>
-  <b>Website</b><br>
-  <a href="https://svcdigitalstudios.in/" target="_blank" rel="noopener">
-    svcdigitalstudios.in
-  </a>
-</div>
+                <div><b>Website</b><a href="https://www.svcdigitalstudios.in/" target="_blank" rel="noopener">www.svcdigitalstudios.in</a></div>
               </div>
             </div>
 
@@ -1827,13 +1913,12 @@ Wedding Photography, Passport Photos, Xerox, Color Printing, PAN Card Services, 
                  href="https://wa.me/919361359884?text=Hello%20SVC%20Digital%20Studios,%20I%20would%20like%20to%20know%20more%20about%20your%20services.">
                 <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
               </a>
-             
           </div>
-
+          </div>
 
           <div class="contact-art" id="closingMoments">
             <div class="closing-showcase">
-              <span class="closing-kicker">Wedding moments</span>
+              <span class="closing-kicker">Wedding Memories</span>
 
               <div class="closing-frame">
                 <div class="closing-slider" aria-label="Animated wedding moments gallery">
