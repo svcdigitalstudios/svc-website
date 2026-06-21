@@ -1685,6 +1685,50 @@
       .hero-business-name{font-size:clamp(1rem,4.6vw,1.35rem) !important;}
     }
 
+
+    /* UPDATED SVC STUDIO LOGO ALIGNMENT */
+    .brand{
+      max-width:min(34vw,250px) !important;
+    }
+    .brand-mark.wide-logo{
+      width:clamp(150px,20vw,210px) !important;
+      height:94px !important;
+      padding:0 !important;
+      border:0 !important;
+      background:transparent !important;
+      box-shadow:none !important;
+      border-radius:0 !important;
+      overflow:visible !important;
+      align-items:center !important;
+      justify-content:flex-start !important;
+    }
+    .brand-mark.wide-logo .brand-logo{
+      width:100% !important;
+      height:100% !important;
+      object-fit:contain !important;
+      object-position:left center !important;
+      filter:drop-shadow(0 8px 18px rgba(0,0,0,.42)) !important;
+    }
+    nav{height:110px !important;}
+    .hero-grid{padding-top:128px !important;}
+    @media (max-width:1050px){
+      .brand{max-width:min(38vw,220px) !important;}
+      .brand-mark.wide-logo{width:clamp(145px,24vw,190px) !important;height:86px !important;}
+      nav{height:100px !important;}
+      .hero-grid{padding-top:118px !important;}
+    }
+    @media (max-width:820px){
+      .brand{max-width:calc(100vw - 98px) !important;}
+      .brand-mark.wide-logo{width:180px !important;height:82px !important;}
+      nav{height:96px !important;}
+      .hero-grid{padding-top:112px !important;}
+    }
+    @media (max-width:580px){
+      .brand-mark.wide-logo{width:150px !important;height:70px !important;}
+      nav{height:86px !important;}
+      .hero-grid{padding-top:104px !important;}
+    }
+
   </style>
 </head>
 
@@ -1696,7 +1740,7 @@
       <nav>
         <a class="brand" href="#home" aria-label="Sri Venkateshwara Computers & Digital Studio Videos Home">
           <div class="brand-mark wide-logo" aria-hidden="true">
-            <img class="brand-logo" src="svc-website-logo-visible.png" alt="Sri Venkateshwara Computers & Digital Studio Videos logo">
+            <img class="brand-logo" src="svc-logo-studio.png" alt="SVC Digital Studio Videos logo">
           </div>
           <div class="brand-copy brand-fallback">
             <strong>Sri Venkateshwara Computers</strong>
