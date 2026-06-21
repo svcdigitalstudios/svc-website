@@ -1773,6 +1773,37 @@
     .footer-inner{align-items:flex-start;}
     .footer-address{line-height:1.7;color:#d5dbee;}
 
+  
+    /* Floating social icons */
+    .social-float{
+      position:fixed;
+      right:22px;
+      bottom:155px;
+      z-index:1100;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    .social-float a{
+      width:48px;
+      height:48px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      color:#fff;
+      font-size:1.25rem;
+      box-shadow:0 14px 30px rgba(0,0,0,.28);
+      border:1px solid rgba(255,255,255,.14);
+      transition:.25s ease;
+    }
+    .social-float a:hover{transform:translateY(-4px) scale(1.04)}
+    .social-float .yt{background:#ff0033}
+    .social-float .fb{background:#1877f2}
+    @media (max-width:580px){
+      .social-float{right:18px;bottom:150px}
+      .social-float a{width:44px;height:44px;font-size:1.15rem}
+    }
+
   </style>
 </head>
 
@@ -2208,7 +2239,7 @@
               </div>
               <div class="contact-row">
                 <i class="fa-solid fa-phone"></i>
-                <div><b>Mobile / WhatsApp</b><a href="tel:+919361359884">+91 93615 39884</a></div>
+                <div><b>Mobile / WhatsApp</b><a href="tel:+919361359884">+91 93613 59884</a></div>
               </div>
               <div class="contact-row">
                 <i class="fa-solid fa-envelope"></i>
@@ -2315,21 +2346,36 @@
         Keezhapalur (Keelapalur)<br>
         Ariyalur Taluk, Thirumanur Block<br>
         Ariyalur District, Tamil Nadu 621707<br>
-        📞 +91 93615 39884<br>
+        📞 +91 93613 59884<br>
         ✉️ team@svcdigitalstudios.in
       </p>
     </div>
 
   </div>
 
-<div style="margin-top:15px;text-align:center;">
-<a href="https://www.youtube.com/@svcdigitalstudios" target="_blank" style="margin:0 10px;">YouTube</a>
-<a href="https://www.facebook.com/profile.php?id=61591206504062" target="_blank" style="margin:0 10px;">Facebook</a>
-</div>
+
+  <div class="footer-social" style="margin-top:16px;text-align:center;display:flex;justify-content:center;gap:14px;flex-wrap:wrap;">
+    <a href="https://www.youtube.com/@svcdigitalstudios" target="_blank" rel="noopener" aria-label="YouTube" style="display:inline-flex;align-items:center;gap:8px;">
+      <i class="fa-brands fa-youtube"></i> YouTube
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61591206504062" target="_blank" rel="noopener" aria-label="Facebook" style="display:inline-flex;align-items:center;gap:8px;">
+      <i class="fa-brands fa-facebook"></i> Facebook
+    </a>
+  </div>
 
 </footer>
 
-  <a class="wa-float" aria-label="Chat on WhatsApp" target="_blank" rel="noopener"
+  
+  <div class="social-float" aria-label="Social media links">
+    <a class="yt" href="https://www.youtube.com/@svcdigitalstudios" target="_blank" rel="noopener" aria-label="YouTube">
+      <i class="fa-brands fa-youtube"></i>
+    </a>
+    <a class="fb" href="https://www.facebook.com/profile.php?id=61591206504062" target="_blank" rel="noopener" aria-label="Facebook">
+      <i class="fa-brands fa-facebook-f"></i>
+    </a>
+  </div>
+
+<a class="wa-float" aria-label="Chat on WhatsApp" target="_blank" rel="noopener"
      href="https://wa.me/919361359884?text=Hello%20SVC%20Digital%20Studios,%20I%20would%20like%20to%20know%20more%20about%20your%20services.">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
