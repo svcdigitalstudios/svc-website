@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-<url>
-<loc>https://svcdigitalstudios.in/</loc>
-<priority>1.0</priority>
-</url>
-
-<url>
-<loc>https://svcdigitalstudios.in/#weddings</loc>
-</url>
-
-<url>
-<loc>https://svcdigitalstudios.in/#services</loc>
-</url>
-
-<url>
-<loc>https://svcdigitalstudios.in/#gallery</loc>
-</url>
-
-<url>
-<loc>https://svcdigitalstudios.in/#reviews</loc>
-</url>
-
-<url>
-<loc>https://svcdigitalstudios.in/#contact</loc>
-</url>
-
+  <url>
+    <loc>https://www.svcdigitalstudios.in/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://www.svcdigitalstudios.in/#services</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.svcdigitalstudios.in/#weddings</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.svcdigitalstudios.in/#faq</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
 </urlset>
