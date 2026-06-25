@@ -1847,8 +1847,218 @@
       .wa-float{right:16px;bottom:18px;width:54px;height:54px}
       .top-btn{right:20px;bottom:86px}
     }
+  
+
+    /* FINAL 2026 HEADER, ROUND LOGO, ALIGNMENT & IMAGE QUALITY UPDATE */
+    .nav-wrap{
+      background:rgba(7,9,20,.78) !important;
+      backdrop-filter:blur(18px) !important;
+      border-bottom:1px solid rgba(255,255,255,.10);
+    }
+    nav{
+      height:88px !important;
+      display:flex !important;
+      align-items:center !important;
+      justify-content:space-between !important;
+      gap:18px !important;
+    }
+    .brand{
+      display:flex !important;
+      align-items:center !important;
+      gap:13px !important;
+      min-width:0 !important;
+      max-width:clamp(330px,36vw,470px) !important;
+      flex:0 1 auto !important;
+    }
+    .brand-mark.round-logo{
+      position:relative !important;
+      width:66px !important;
+      height:66px !important;
+      flex:0 0 66px !important;
+      border-radius:50% !important;
+      padding:6px !important;
+      overflow:hidden !important;
+      display:grid !important;
+      place-items:center !important;
+      background:
+        linear-gradient(#ffffff,#ffffff) padding-box,
+        linear-gradient(135deg,#fbcfe8,#ec4899,#8b5cf6,#22d3ee) border-box !important;
+      border:3px solid transparent !important;
+      box-shadow:0 14px 34px rgba(0,0,0,.34),0 0 32px rgba(236,72,153,.20) !important;
+    }
+    .brand-mark.round-logo::before,
+    .brand-mark.round-logo::after{display:none !important;content:none !important;}
+    .brand-mark.round-logo .brand-logo{
+      position:relative !important;
+      z-index:2 !important;
+      width:100% !important;
+      height:100% !important;
+      max-width:none !important;
+      object-fit:contain !important;
+      object-position:center !important;
+      border-radius:50% !important;
+      filter:none !important;
+    }
+    .brand-initials{
+      position:absolute;
+      inset:0;
+      z-index:1;
+      display:none;
+      place-items:center;
+      border-radius:50%;
+      color:#111827;
+      font-weight:900;
+      font-size:1.05rem;
+      letter-spacing:.06em;
+      background:linear-gradient(135deg,#fff,#fdf2f8 45%,#e0f2fe);
+    }
+    .brand-copy{
+      display:flex !important;
+      flex-direction:column !important;
+      justify-content:center !important;
+      min-width:0 !important;
+      line-height:1.14 !important;
+    }
+    .brand-copy strong{
+      display:block !important;
+      max-width:100% !important;
+      white-space:normal !important;
+      overflow:visible !important;
+      text-overflow:clip !important;
+      color:#ffffff !important;
+      font-size:clamp(.94rem,1.35vw,1.18rem) !important;
+      font-weight:900 !important;
+      letter-spacing:-.01em !important;
+      text-shadow:0 3px 16px rgba(0,0,0,.42);
+    }
+    .brand-copy span{
+      display:block !important;
+      max-width:100% !important;
+      white-space:normal !important;
+      overflow:visible !important;
+      text-overflow:clip !important;
+      margin-top:3px !important;
+      color:#dbeafe !important;
+      font-size:clamp(.72rem,1vw,.88rem) !important;
+      font-weight:800 !important;
+      letter-spacing:.01em;
+    }
+    .nav-links{
+      display:flex;
+      align-items:center;
+      justify-content:flex-end;
+      gap:14px !important;
+      flex:1 1 auto;
+    }
+    .nav-links a{font-size:.84rem !important;white-space:nowrap;}
+    .nav-cta{padding:10px 15px !important;}
+
+    .hero-copy,
+    .section-head,
+    .service-toolbar,
+    .platforms-head,
+    .about-grid,
+    .contact-card{min-width:0;}
+    .hero-grid{align-items:center !important;}
+    .hero h1{text-wrap:balance;}
+    .hero-business-name{text-wrap:balance;}
+    .section-copy{text-wrap:pretty;}
+    .services-grid{align-items:stretch;}
+    .service-card{display:flex;flex-direction:column;justify-content:flex-start;}
+    .service-card h3{line-height:1.28;}
+    .logo-card{min-width:0;}
+    .contact-row{min-width:0;overflow-wrap:anywhere;}
+    .footer-inner{align-items:flex-start;}
+
+    .hero-card-image,
+    .wedding-card,
+    #about .about-visual,
+    .story-stage,
+    .closing-slider{
+      background:linear-gradient(145deg,#111827,#020617);
+    }
+    .hero-card-image img,
+    .wedding-card img,
+    #about .about-visual img,
+    .story-photo,
+    .closing-slide{
+      image-rendering:auto;
+      -webkit-backface-visibility:hidden;
+      backface-visibility:hidden;
+      transform-origin:center;
+      filter:saturate(1.04) contrast(1.025);
+    }
+    .hero-card-image img,
+    .wedding-card img,
+    #about .about-visual img.about-couple-photo,
+    .closing-slide{
+      width:100% !important;
+      height:100% !important;
+      max-width:none !important;
+      object-fit:cover !important;
+    }
+    .hero-card-image img.tamil-photo{object-position:center 24% !important;}
+    .hero-card-image img.kerala-photo{object-position:center 36% !important;}
+    .hero-card-image img.hindi-photo{object-position:center 34% !important;}
+    .wedding-card img.kerala-photo{object-position:center 34% !important;}
+    .wedding-card img.tamil-photo{object-position:center 24% !important;}
+    .wedding-card img.hindi-photo{object-position:center 35% !important;}
+    #about .about-visual img.about-couple-photo{object-position:center 36% !important;}
+    .story-heart-shell{max-width:100%;}
+    .story-photo{object-position:center center !important;}
+    .closing-slide{object-position:center center !important;}
+
+    @media (max-width:1100px){
+      nav{height:82px !important;}
+      .brand{max-width:calc(100vw - 96px) !important;}
+      .brand-mark.round-logo{width:60px !important;height:60px !important;flex-basis:60px !important;padding:5px !important;}
+      .menu-btn{display:grid !important;place-items:center !important;flex:0 0 45px;}
+      .nav-links{
+        position:fixed !important;
+        left:18px !important;
+        right:18px !important;
+        top:82px !important;
+        display:flex !important;
+        flex-direction:column !important;
+        align-items:stretch !important;
+        gap:3px !important;
+        padding:16px !important;
+        border-radius:20px !important;
+        border:1px solid var(--line) !important;
+        background:rgba(7,9,20,.97) !important;
+        backdrop-filter:blur(18px) !important;
+        opacity:0 !important;
+        visibility:hidden !important;
+        transform:translateY(-12px) !important;
+        transition:.3s ease !important;
+        flex:none !important;
+      }
+      .nav-links.open{opacity:1 !important;visibility:visible !important;transform:none !important;}
+      .nav-links a{padding:12px 14px !important;font-size:.92rem !important;}
+      .nav-cta{text-align:center;}
+    }
+    @media (max-width:640px){
+      nav{height:76px !important;}
+      .brand{gap:10px !important;max-width:calc(100vw - 86px) !important;}
+      .brand-mark.round-logo{width:54px !important;height:54px !important;flex-basis:54px !important;padding:4px !important;border-width:2px !important;}
+      .brand-copy strong{font-size:.82rem !important;line-height:1.12 !important;}
+      .brand-copy span{font-size:.68rem !important;line-height:1.12 !important;}
+      .nav-links{top:76px !important;left:12px !important;right:12px !important;}
+      .hero-grid{padding-top:96px !important;}
+      .hero-copy{text-align:center;}
+      .hero-actions,.trust-row{justify-content:center;}
+      .quick-services{grid-template-columns:1fr 1fr !important;}
+      .wedding-card{min-height:430px !important;height:430px !important;}
+      .story-stage{min-height:560px !important;}
+    }
+    @media (max-width:390px){
+      .brand-copy strong{font-size:.76rem !important;}
+      .brand-copy span{font-size:.62rem !important;}
+      .brand-mark.round-logo{width:50px !important;height:50px !important;flex-basis:50px !important;}
+    }
+
   </style>
-  <!-- Updated: professional wedding/about content and premium about section alignment -->
+  <!-- Updated: round header logo, visible business name, alignment and image-quality refinements -->
 </head>
 
 <body>
@@ -1857,13 +2067,14 @@
   <header class="nav-wrap" id="navbar">
     <div class="container">
       <nav>
-        <a class="brand" href="#home" aria-label="Sri Venkateshwara Computers & Digital Studio Videos Home">
-          <div class="brand-mark wide-logo" aria-hidden="true">
-            <img class="brand-logo" src="svc-logo-studio.png" onerror="this.onerror=null;this.src='svc-website-logo-visible.png';" alt="Sri Venkateshwara Computers & Digital Studio Videos logo">
+        <a class="brand" href="#home" aria-label="Sri Venkateshwara Computers and Digital Studio Videos Home">
+          <div class="brand-mark round-logo" aria-hidden="true">
+            <img class="brand-logo" src="svc-logo-studio.png" onerror="this.style.display='none';this.nextElementSibling.style.display='grid';" alt="Sri Venkateshwara Computers and Digital Studio Videos logo" width="96" height="96">
+            <span class="brand-initials">SVC</span>
           </div>
-          <div class="brand-copy brand-fallback">
+          <div class="brand-copy">
             <strong>Sri Venkateshwara Computers</strong>
-            <span>Digital Studio Videos</span>
+            <span>and Digital Studio Videos</span>
           </div>
         </a>
 
@@ -1928,7 +2139,7 @@
         <div class="hero-card reveal">
           <div class="hero-card-image" id="heroCulturalSlider">
             <img class="active tamil-photo" src="tamil-couple.webp.png" alt="Elegant Tamil bride and groom in traditional wedding attire" width="1000" height="1320" decoding="async" fetchpriority="high">
-            <img class="kerala-photo" src="Kerala-couple.webp.png" alt="Elegant Kerala-style bride in a cream and gold saree with groom" loading="lazy" decoding="async">
+            <img class="kerala-photo" src="Kerala-couple.webp.png" alt="Elegant Kerala-style bride in a cream and gold saree with groom" width="1000" height="1320" loading="lazy" decoding="async">
             <img class="hindi-photo" src="https://images.pexels.com/photos/20088740/pexels-photo-20088740.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Elegant North Indian bride and groom in traditional wedding attire" loading="lazy" decoding="async">
             <span class="hero-card-label" id="heroCardLabel">Premium Wedding</span>
           </div>
@@ -1955,7 +2166,7 @@
 
         <div class="wedding-grid">
           <article class="wedding-card reveal">
-            <img class="kerala-photo" src="Kerala-couple.webp.png" alt="Kerala-style bride and groom in a graceful traditional wedding portrait" loading="lazy" decoding="async">
+            <img class="kerala-photo" src="Kerala-couple.webp.png" alt="Kerala-style bride and groom in a graceful traditional wedding portrait" width="1000" height="1320" loading="lazy" decoding="async">
             <div class="wedding-card-content"><span>Traditional Style</span><h3>Kerala Wedding Portraits</h3><p>Graceful cream-and-gold wedding portraits with natural skin tone, clean details and premium album finishing.</p></div>
           </article>
           <article class="wedding-card reveal">
