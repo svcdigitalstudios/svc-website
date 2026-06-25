@@ -35,7 +35,7 @@
     "telephone": "+91 93613 59884",
     "priceRange": "₹₹",
     "image": "https://www.svcdigitalstudios.in/tamil-couple.webp.png",
-    "logo": "https://www.svcdigitalstudios.in/svc-website-logo-visible.png",
+    "logo": "https://www.svcdigitalstudios.in/svc-logo-studio.png",
     "description": "Trusted digital service center and wedding photography studio in Keezhapalur / Keelapalur, Ariyalur District, offering wedding photography, passport photos, Xerox, color printing, PAN card assistance, AEPS cash withdrawal, money transfer, insurance, LIC, bill payments and online services.",
     "address": {
       "@type": "PostalAddress",
@@ -1744,6 +1744,61 @@
       .hero-business-name{font-size:clamp(1rem,4.6vw,1.35rem) !important;}
     }
 
+    /* final candid image and logo fallback cleanup */
+    .about-note strong{font-family:"Playfair Display",serif;font-size:clamp(1.35rem,2.6vw,2rem);line-height:1.05;}
+    .about-note span{font-size:.98rem;color:#e5e7eb;}
+    .wedding-card img.hindi-photo{object-position:center 35%;}
+    .about-visual img.about-couple-photo{object-position:center 36%;}
+
+    /* premium about section theme update */
+    #about{
+      background:
+        radial-gradient(circle at 12% 10%,rgba(236,72,153,.13),transparent 28%),
+        radial-gradient(circle at 88% 82%,rgba(34,211,238,.10),transparent 30%);
+    }
+    #about .about-grid{
+      align-items:center;
+      gap:clamp(30px,5vw,70px);
+    }
+    #about .about-visual{
+      padding:14px;
+      border-radius:34px;
+      background:linear-gradient(145deg,rgba(255,255,255,.14),rgba(255,255,255,.04));
+      border:1px solid rgba(255,255,255,.14);
+      box-shadow:var(--shadow);
+    }
+    #about .about-visual::after{
+      content:"";position:absolute;inset:14px;border-radius:26px;
+      background:linear-gradient(180deg,transparent 52%,rgba(5,7,17,.78));
+      pointer-events:none;
+    }
+    #about .about-visual img.about-couple-photo{
+      height:min(620px,68vh);
+      border-radius:24px;
+      box-shadow:none;
+    }
+    #about .about-note{
+      left:34px;right:34px;bottom:34px;max-width:none;
+      display:flex;align-items:center;justify-content:space-between;gap:18px;
+      padding:18px 22px;border-radius:20px;
+      background:rgba(7,9,20,.78);
+      border:1px solid rgba(255,255,255,.18);
+      backdrop-filter:blur(16px);
+      z-index:2;
+    }
+    #about .about-note strong{font-family:"Manrope",system-ui,sans-serif;font-size:1.05rem;letter-spacing:.01em;margin:0;}
+    #about .about-note span{font-size:.9rem;color:#dbeafe;text-align:right;}
+    #about .feature{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.13)}
+    @media (max-width:820px){
+      #about .about-note{left:28px;right:28px;bottom:28px;flex-direction:column;align-items:flex-start;}
+      #about .about-note span{text-align:left;}
+    }
+    @media (max-width:580px){
+      #about .about-visual{padding:10px;border-radius:26px;}
+      #about .about-visual img.about-couple-photo{height:430px;border-radius:20px;}
+      #about .about-note{left:20px;right:20px;bottom:20px;padding:15px 16px;}
+    }
+
     /* final readability and mobile alignment cleanup */
     .hero-copy{text-wrap:balance}
     .hero-business-name{font-weight:800;color:#fff;margin-bottom:10px!important}
@@ -1773,6 +1828,7 @@
     }
 
   </style>
+  <!-- Updated: professional wedding/about content and premium about section alignment -->
 </head>
 
 <body>
@@ -1783,7 +1839,7 @@
       <nav>
         <a class="brand" href="#home" aria-label="Sri Venkateshwara Computers & Digital Studio Videos Home">
           <div class="brand-mark wide-logo" aria-hidden="true">
-            <img class="brand-logo" src="svc-website-logo-visible.png" alt="Sri Venkateshwara Computers & Digital Studio Videos logo">
+            <img class="brand-logo" src="svc-logo-studio.png" onerror="this.onerror=null;this.src='svc-website-logo-visible.png';" alt="Sri Venkateshwara Computers & Digital Studio Videos logo">
           </div>
           <div class="brand-copy brand-fallback">
             <strong>Sri Venkateshwara Computers</strong>
@@ -1857,8 +1913,8 @@
             <span class="hero-card-label" id="heroCardLabel">Premium Wedding</span>
           </div>
           <div class="hero-card-body">
-            <h3>Premium Wedding Photography</h3>
-            <p>Traditional Tamil, Kerala and North Indian celebrations captured with natural colour, clean retouching and cinematic framing.</p>
+            <h3>Premium Wedding Coverage</h3>
+            <p>Elegant candid photography, natural colours and clean album-ready editing for family functions and wedding celebrations.</p>
             <div class="hero-mini">
               <div><strong>Tamil</strong><span>Rituals</span></div>
               <div><strong>Kerala</strong><span>Tradition</span></div>
@@ -1879,16 +1935,16 @@
 
         <div class="wedding-grid">
           <article class="wedding-card reveal">
-            <img class="kerala-photo" src="Kerala-couple.webp.png" alt="Kerala-style bride in cream and gold saree with groom in traditional attire" loading="lazy" decoding="async">
-            <div class="wedding-card-content"><span>Kerala Style</span><h3>Traditional Wedding Moments</h3><p>Cream-and-gold saree details, rituals and couple portraits captured with clean, premium studio finishing.</p></div>
+            <img class="kerala-photo" src="Kerala-couple.webp.png" alt="Kerala-style bride and groom in a graceful traditional wedding portrait" loading="lazy" decoding="async">
+            <div class="wedding-card-content"><span>Traditional Style</span><h3>Kerala Wedding Portraits</h3><p>Graceful cream-and-gold wedding portraits with natural skin tone, clean details and premium album finishing.</p></div>
           </article>
           <article class="wedding-card reveal">
-            <img class="tamil-photo" src="tamil-couple.webp.png" alt="Elegant Tamil bride in a silk saree with groom in a wedding portrait" width="1000" height="1320" loading="lazy" decoding="async">
-            <div class="wedding-card-content"><span>Tamil Nadu</span><h3>Tamil Wedding Storytelling</h3><p>Silk saree, temple jewellery, family emotions and rituals captured in natural, cinematic frames.</p></div>
+            <img class="tamil-photo" src="tamil-couple.webp.png" alt="Tamil wedding couple in a beautiful traditional candid portrait" width="1000" height="1320" loading="lazy" decoding="async">
+            <div class="wedding-card-content"><span>Tamil Wedding</span><h3>Elegant Candid Moments</h3><p>Beautiful rituals, family emotions and couple portraits captured with a modern professional wedding look.</p></div>
           </article>
           <article class="wedding-card reveal">
-            <img class="hindi-photo" src="https://images.pexels.com/photos/20088740/pexels-photo-20088740.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="North Indian bride in bridal lehenga with groom in sherwani" loading="lazy" decoding="async">
-            <div class="wedding-card-content"><span>Portraits & Albums</span><h3>Royal Wedding Portraits</h3><p>Elegant bridal styling, groom portraits and celebration highlights designed for albums, reels and banners.</p></div>
+            <img class="hindi-photo" src="gallery-7.webp" onerror="this.onerror=null;this.src='https://images.pexels.com/photos/20088740/pexels-photo-20088740.jpeg?auto=compress&cs=tinysrgb&w=1400';" alt="Beautiful candid wedding couple portrait for reels and albums" loading="lazy" decoding="async">
+            <div class="wedding-card-content"><span>Modern Candid</span><h3>Instagram-Ready Frames</h3><p>Clean composition, vibrant colours and cinematic candid photos prepared for albums, reels and social sharing.</p></div>
           </article>
         </div>
       </div>
@@ -2002,19 +2058,19 @@
     <section class="section" id="about">
       <div class="container about-grid">
         <div class="about-visual reveal">
-          <img class="about-couple-photo" src="https://images.pexels.com/photos/34479835/pexels-photo-34479835.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Elegant Indian wedding couple sharing a joyful outdoor portrait" loading="lazy" decoding="async">
+          <img class="about-couple-photo" src="gallery-7.webp" onerror="this.onerror=null;this.src='tamil-couple.webp.png';" alt="Beautiful Tamil candid wedding couple photo with natural smiles" loading="lazy" decoding="async">
           <div class="about-note">
-            <strong>Moments made timeless</strong>
-            <span>Natural colours, emotional storytelling and careful finishing.</span>
+            <strong>Premium Candid Studio</strong>
+            <span>Wedding photos • reels • album design</span>
           </div>
         </div>
 
         <div class="reveal">
           <span class="eyebrow">Why choose SVC</span>
-          <h2 class="section-title">Creative studio quality with <span class="gradient-text">trusted local service</span></h2>
+          <h2 class="section-title">Professional photography with <span class="gradient-text">clear local service</span></h2>
           <p class="section-copy">
-            We combine event creativity and essential digital services under one roof,
-            making it easier for families, students and local customers to get reliable support.
+            From wedding shoots to passport photos, printing, AEPS banking and online work,
+            we keep every service simple, fast and customer-friendly.
           </p>
 
           <div class="feature-list">
