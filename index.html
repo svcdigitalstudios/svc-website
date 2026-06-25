@@ -86,7 +86,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://images.pexels.com" crossorigin>
+  <link rel="preload" as="image" href="tamil-couple.webp.png" fetchpriority="high">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"></noscript>
 
   <style>
     :root{
@@ -215,7 +219,7 @@
       min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;
       background:
         linear-gradient(90deg,rgba(5,7,17,.96) 0%,rgba(5,7,17,.84) 45%,rgba(5,7,17,.28) 100%),
-        url("https://images.pexels.com/photos/30289609/pexels-photo-30289609.jpeg?auto=compress&cs=tinysrgb&w=2000") center 38%/cover no-repeat;
+        url("https://images.pexels.com/photos/30289609/pexels-photo-30289609.jpeg?auto=compress&cs=tinysrgb&w=1200") center 38%/cover no-repeat;
     }
     .hero::before{
       content:"";position:absolute;width:440px;height:440px;border-radius:50%;
@@ -2057,13 +2061,22 @@
       .brand-mark.round-logo{width:50px !important;height:50px !important;flex-basis:50px !important;}
     }
 
+
+    /* PageSpeed mobile performance refinements */
+    #preloader{display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important}
+    img{image-rendering:auto}
+    .hero{background-size:cover!important;}
+    @media (max-width:580px){
+      .hero{background-position:center 34%!important;}
+      .story-photo{filter:none!important;}
+      .hero-card{animation:none!important;}
+    }
+
   </style>
   <!-- Updated: round header logo, visible business name, alignment and image-quality refinements -->
 </head>
 
 <body>
-  <div id="preloader"><div class="loader"></div></div>
-
   <header class="nav-wrap" id="navbar">
     <div class="container">
       <nav>
@@ -2140,7 +2153,7 @@
           <div class="hero-card-image" id="heroCulturalSlider">
             <img class="active tamil-photo" src="tamil-couple.webp.png" alt="Elegant Tamil bride and groom in traditional wedding attire" width="1000" height="1320" decoding="async" fetchpriority="high">
             <img class="kerala-photo" src="Kerala-couple.webp.png" alt="Elegant Kerala-style bride in a cream and gold saree with groom" width="1000" height="1320" loading="lazy" decoding="async">
-            <img class="hindi-photo" src="https://images.pexels.com/photos/20088740/pexels-photo-20088740.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Elegant North Indian bride and groom in traditional wedding attire" loading="lazy" decoding="async">
+            <img class="hindi-photo" src="https://images.pexels.com/photos/20088740/pexels-photo-20088740.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Elegant North Indian bride and groom in traditional wedding attire" loading="lazy" decoding="async">
             <span class="hero-card-label" id="heroCardLabel">Premium Wedding</span>
           </div>
           <div class="hero-card-body">
@@ -2600,8 +2613,6 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      const preloader = document.getElementById("preloader");
-      window.setTimeout(() => preloader.classList.add("hide"), 120);
     });
 
     const navbar = document.getElementById("navbar");
