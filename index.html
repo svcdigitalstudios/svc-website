@@ -493,6 +493,19 @@
       display:grid;place-items:center;cursor:pointer;opacity:0;visibility:hidden;transition:.3s;
     }
     .top-btn.show{opacity:1;visibility:visible}
+    .social-floats{
+      position:fixed;left:20px;bottom:22px;z-index:1090;
+      display:flex;flex-direction:column;gap:10px;
+    }
+    .social-floats a{
+      width:46px;height:46px;border-radius:15px;display:grid;place-items:center;
+      color:#fff;font-size:1.18rem;border:1px solid rgba(255,255,255,.16);
+      background:rgba(7,9,20,.86);backdrop-filter:blur(12px);
+      box-shadow:0 14px 28px rgba(0,0,0,.24);transition:.25s ease;
+    }
+    .social-floats a:hover{transform:translateY(-3px)}
+    .social-floats .yt{background:linear-gradient(135deg,#ff0033,#8b0000)}
+    .social-floats .fb{background:linear-gradient(135deg,#1877f2,#0b3f8a)}
 
     /* reveal */
     .reveal{opacity:0;transform:translateY(28px);transition:opacity .75s ease,transform .75s ease}
@@ -1827,6 +1840,13 @@
       .footer-inner{text-align:center;justify-content:center}
     }
 
+  
+    @media (max-width:640px){
+      .social-floats{left:14px;bottom:18px;gap:8px}
+      .social-floats a{width:42px;height:42px;border-radius:14px;font-size:1.05rem}
+      .wa-float{right:16px;bottom:18px;width:54px;height:54px}
+      .top-btn{right:20px;bottom:86px}
+    }
   </style>
   <!-- Updated: professional wedding/about content and premium about section alignment -->
 </head>
@@ -1943,7 +1963,7 @@
             <div class="wedding-card-content"><span>Tamil Wedding</span><h3>Elegant Candid Moments</h3><p>Beautiful rituals, family emotions and couple portraits captured with a modern professional wedding look.</p></div>
           </article>
           <article class="wedding-card reveal">
-            <img class="hindi-photo" src="gallery-7.webp" onerror="this.onerror=null;this.src='https://images.pexels.com/photos/20088740/pexels-photo-20088740.jpeg?auto=compress&cs=tinysrgb&w=1400';" alt="Beautiful candid wedding couple portrait for reels and albums" loading="lazy" decoding="async">
+            <img class="hindi-photo" src="instagram-ready-frames.webp" onerror="this.onerror=null;this.src='tamil-couple.webp.png';" alt="Modern candid wedding couple portrait for albums reels and social sharing" width="1122" height="1402" loading="lazy" decoding="async">
             <div class="wedding-card-content"><span>Modern Candid</span><h3>Instagram-Ready Frames</h3><p>Clean composition, vibrant colours and cinematic candid photos prepared for albums, reels and social sharing.</p></div>
           </article>
         </div>
@@ -2058,10 +2078,10 @@
     <section class="section" id="about">
       <div class="container about-grid">
         <div class="about-visual reveal">
-          <img class="about-couple-photo" src="gallery-7.webp" onerror="this.onerror=null;this.src='tamil-couple.webp.png';" alt="Beautiful Tamil candid wedding couple photo with natural smiles" loading="lazy" decoding="async">
+          <img class="about-couple-photo" src="instagram-ready-frames.webp" onerror="this.onerror=null;this.src='tamil-couple.webp.png';" alt="Professional candid wedding photography sample for Keezhapalur and Ariyalur customers" width="1122" height="1402" loading="lazy" decoding="async">
           <div class="about-note">
-            <strong>Premium Candid Studio</strong>
-            <span>Wedding photos • reels • album design</span>
+            <strong>Professional Wedding Studio</strong>
+            <span>Candid photos • reels • premium album design</span>
           </div>
         </div>
 
@@ -2069,8 +2089,7 @@
           <span class="eyebrow">Why choose SVC</span>
           <h2 class="section-title">Professional photography with <span class="gradient-text">clear local service</span></h2>
           <p class="section-copy">
-            From wedding shoots to passport photos, printing, AEPS banking and online work,
-            we keep every service simple, fast and customer-friendly.
+            SVC Digital Studios provides wedding photography, candid portraits, reels, album design, passport photos, printing, AEPS banking and online services for Keezhapalur / Keelapalur, Kilapalur, Kilapazhuvur, Ariyalur and nearby villages.
           </p>
 
           <div class="feature-list">
@@ -2350,6 +2369,11 @@
 
   </div>
 </footer>
+
+  <div class="social-floats" aria-label="Social media links">
+    <a class="yt" aria-label="YouTube channel" target="_blank" rel="noopener" href="https://www.youtube.com/@svcdigitalstudios"><i class="fa-brands fa-youtube"></i></a>
+    <a class="fb" aria-label="Facebook profile" target="_blank" rel="noopener" href="https://www.facebook.com/profile.php?id=61591206504062"><i class="fa-brands fa-facebook-f"></i></a>
+  </div>
 
   <a class="wa-float" aria-label="Chat on WhatsApp" target="_blank" rel="noopener"
      href="https://wa.me/919361359884?text=Hello%20SVC%20Digital%20Studios,%20I%20would%20like%20to%20know%20more%20about%20your%20services.">
