@@ -1,0 +1,26 @@
+SVC Digital Studios favicon + top-left logo package
+
+Upload every file in this folder to your GitHub Pages repository root folder, the same place where index.html is located.
+
+Files included:
+- index.html
+- favicon.ico (multi-resolution: 16, 32, 48, 64, 128, 256)
+- favicon-16x16.png
+- favicon-32x32.png
+- favicon-48x48.png
+- favicon-64x64.png
+- favicon-128x128.png
+- favicon-256x256.png
+- apple-touch-icon.png
+- android-chrome-192x192.png
+- android-chrome-512x512.png
+- site.webmanifest
+- browserconfig.xml
+- svc-logo-studio.png
+
+After upload, commit changes. Then test:
+https://svcdigitalstudios.in/favicon.ico
+https://svcdigitalstudios.in/site.webmanifest
+https://svcdigitalstudios.in/svc-logo-studio.png
+
+Then request indexing in Google Search Console.
