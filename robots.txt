@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://svcdigitalstudios.in/sitemap.xml
+Sitemap: https://www.svcdigitalstudios.in/sitemap.xml
